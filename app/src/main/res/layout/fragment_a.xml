@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    tools:context=".FragmentA">
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/truck"
+        android:id="@+id/imgFrag1"
+        app:layout_constraintHorizontal_bias=".3"
+        app:layout_constraintVertical_bias=".3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtTop"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintVertical_bias="0"
+        android:layout_marginTop="25dp"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/imgFrag1"
+        app:layout_constraintStart_toStartOf="@+id/imgFrag1"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="@string/app_name"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtFresh"
+        android:fontFamily="sans-serif-light"
+        android:text="Fast"
+        android:textSize="42sp"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintVertical_bias="0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/imgFrag1"
+        app:layout_constraintTop_toBottomOf="@+id/imgFrag1" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtEverything"
+        android:text="Delivery"
+        android:textSize="56sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintVertical_bias="0"
+        app:layout_constraintHorizontal_bias="0"
+        android:fontFamily="sans-serif-condensed"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtFresh"
+        app:layout_constraintStart_toStartOf="@id/txtFresh"
+        />
+
+    <TextView
+        android:id="@+id/txtSmall"
+        android:layout_width="323dp"
+        android:layout_height="79dp"
+        android:layout_marginTop="5dp"
+        android:text="We delivery our tank to your tank. We prive ourselvs on providing the highest level of efficiency,"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent=".1"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="@+id/txtEverything"
+        app:layout_constraintTop_toBottomOf="@+id/txtEverything"
+        app:layout_constraintVertical_bias="0"
+        app:layout_constraintWidth_percent=".5" />
+
+    <ImageView
+        android:id="@+id/imgTab1"
+        android:layout_width="50dp"
+        android:layout_height="10dp"
+        android:layout_marginLeft="5dp"
+        android:src="@drawable/tab1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/fab_On"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/txtSmall"
+        app:layout_constraintTop_toBottomOf="@id/txtSmall"
+        app:layout_constraintVertical_bias="0.444" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_On"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="35dp"
+        android:src="@drawable/ic_baseline_navigate_next_24"
+        app:backgroundTint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.884"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtSmall"
+        app:layout_constraintVertical_bias="0.448" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

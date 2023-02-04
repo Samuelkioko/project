@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LandingActivity"
+    android:background="@color/whiteSmoke">
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:id="@+id/imgLogo"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/no_background_kca"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/app_name"
+        android:layout_below="@+id/imgLogo"
+        android:layout_marginTop="0dp"
+        android:textSize="24sp"
+        android:letterSpacing=".3"
+        android:textStyle="bold"
+        android:textColor="@color/dark_blue"
+        android:id="@+id/txtAppName"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtMotto"
+        android:text="@string/Motto"
+        android:textColor="@color/dark_blue"
+        android:textSize="14sp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/txtAppName"
+        android:layout_marginTop="15dp"/>
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="@string/get_started"
+        android:layout_below="@+id/txtMotto"
+        android:layout_centerHorizontal="true"
+        android:padding="10dp"
+        android:letterSpacing=".5"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:id="@+id/btnGetstarted"
+        android:layout_marginHorizontal="5dp"
+        android:layout_marginTop="30dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/powered"
+        android:textColor="@color/fade_black"
+        android:layout_below="@+id/btnGetstarted"
+        android:layout_marginTop="70dp"
+        android:textSize="10sp"
+        android:id="@+id/txtPower"/>
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/hitech_no_bg"
+        android:layout_below="@+id/txtPower"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:id="@+id/imgHitech"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hitech"
+        android:layout_below="@id/imgHitech"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/fade_black"
+        android:textSize="10dp"
+        android:id="@+id/txtHitech"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/txtDev"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtHitech"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="10sp"
+        android:layout_marginTop="10dp"
+        android:text="@string/developerName"
+        android:textColor="@color/fade_black" />
+
+
+
+
+</RelativeLayout>

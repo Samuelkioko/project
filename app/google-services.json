@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "649072759120",
+    "project_id": "fillme-a38fa",
+    "storage_bucket": "fillme-a38fa.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:649072759120:android:064dc0b35bc3792b371c55",
+        "android_client_info": {
+          "package_name": "com.example.project"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "649072759120-sedbjnmnf1hcu5qh3f95rvblmtsnvg22.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBrLfMy3Agk_51Q90qILKPRGLFajdX7i7I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "649072759120-sedbjnmnf1hcu5qh3f95rvblmtsnvg22.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

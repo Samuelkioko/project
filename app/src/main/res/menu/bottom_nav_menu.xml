@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <item android:title="Home"
+        android:icon="@drawable/ic_baseline_home_24"
+        app:showAsAction="ifRoom"
+        android:id="@+id/navBottomHome"
+        />
+
+    <item android:title="Portal"
+        android:icon="@drawable/ic_baseline_account_circle_24"
+        android:id="@+id/navBottomAccount"
+        app:showAsAction="ifRoom"
+        />
+    <item android:id="@+id/placeholder"
+        android:title=""
+        android:enabled="false"
+        app:showAsAction="ifRoom"/>
+
+    <item android:title="Moodle"
+        android:icon="@drawable/ic_baseline_school_24"
+        android:id="@+id/navBottomMoodle"
+        app:showAsAction="ifRoom"
+        />
+    <item android:title="Exit"
+        android:icon="@drawable/ic_baseline_close_24"
+        android:id="@+id/navBottomClose"
+        app:showAsAction="ifRoom"
+       />
+</menu>
